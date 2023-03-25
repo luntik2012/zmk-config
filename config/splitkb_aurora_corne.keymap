@@ -37,10 +37,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-      &kp TAB  &kp Q  &kp W     &kp E  &kp R      &kp T    &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
-&mt LCTRL ESC  &kp A  &kp S     &kp D  &kp F      &kp G    &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
-    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH    &tog 3
-                             &kp LGUI  &mo 1  &kp SPACE  &kp RET  &mo 2   &kp RALT
+      &kp TAB  &kp Q  &kp W    &kp E            &kp R      &kp T         &kp Y                 &kp U                   &kp I    &kp O     &kp P  &kp BSPC
+&mt LCTRL ESC  &kp A  &kp S    &kp D            &kp F      &kp G         &kp H                 &kp J                   &kp K    &kp L  &kp SEMI   &kp SQT
+    &kp LSHFT  &kp Z  &kp X    &kp C            &kp V      &kp B         &kp N                 &kp M               &kp COMMA  &kp DOT  &kp FSLH    &tog 3
+                             &kp TAB  &mt LCTRL SPACE  &lt 3 ESC  &lt 4 DELETE  &mt LEFT_SHIFT ENTER  &mt LEFT_ALT BACKSPACE
             >;
         };
 
@@ -52,10 +52,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5    &kp N6    &kp N7    &kp N8     &kp N9        &kp N0      &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &out OUT_USB  &out OUT_BLE
- &kp LSHFT        &trans        &trans        &trans        &trans        &trans    &trans    &trans    &trans     &trans        &trans        &trans
-                                            &kp LGUI        &trans     &kp SPACE   &kp RET    &trans  &kp RALT
+     &kp TAB        &trans        &trans        &trans        &trans        &trans   &trans         &trans    &trans            &kp K_PREV  &kp K_PLAY_PAUSE            &kp K_NEXT
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans         &trans    &trans          &kp K_VOL_DN        &kp K_MUTE          &kp K_VOL_UP
+&out OUT_TOG        &trans        &trans    &kp K_CALC        &trans     &kp K_WWW   &trans  &kp C_AL_MAIL    &trans  &kp C_BRIGHTNESS_DEC             &kp 0  &kp C_BRIGHTNESS_INC
+                                              &kp LGUI        &trans     &kp SPACE  &kp RET         &trans  &kp RALT
             >;
         };
 
@@ -74,12 +74,21 @@
             >;
         };
 
-        anv {
+        NAVIGATION {
             bindings = <
-&trans        &trans        &trans          &trans     &trans  &trans    &trans  &kp PG_UP    &kp UP  &kp PG_DN   &trans  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &trans  &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans
-&trans        &trans        &trans          &trans     &trans  &trans    &trans     &trans    &trans     &trans   &trans  &trans
-                                            &trans     &trans  &trans    &trans     &trans    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &trans
+&trans       &kp F12      &kp HOME     &kp PG_DN     &kp PG_UP       &kp END      &kp LEFT      &kp DOWN        &kp UP     &kp RIGHT       &kp F11   &mt LCTRL ESC
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9       &kp F10  &kp LEFT_SHIFT
+                                          &trans        &trans        &trans        &trans        &trans        &trans
+            >;
+        };
+
+        SYMBOLS {
+            bindings = <
+        &kp TILDE  &kp EXCLAMATION         &kp AT          &kp HASH      &kp DOLLAR           &kp PERCENT              &kp CARET    &kp AMPERSAND       &kp ASTERISK         &kp MINUS  &kp EQUAL          &kp PLUS
+&kp DOUBLE_QUOTES        &kp COLON  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN   &kp SEMI  &kp SINGLE_QUOTE
+        &kp GRAVE     &kp QUESTION         &trans            &trans          &trans                &trans         &kp UNDERSCORE    &kp BACKSLASH          &kp COMMA           &kp DOT  &kp SLASH          &kp PIPE
+                                                             &trans          &trans                &trans                 &trans           &trans             &trans
             >;
         };
     };
