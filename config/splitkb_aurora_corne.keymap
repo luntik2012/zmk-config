@@ -94,10 +94,10 @@
 
         DVORAK {
             bindings = <
-             &kp TAB  &kp SINGLE_QUOTE  &kp COMMA  &kp DOT   &kp P   &kp Y   &kp F   &kp G   &kp C  &kp R  &kp L      &kp EQUAL
-&mt LEFT_CONTROL ESC             &kp A      &kp O    &kp E   &kp U   &kp I   &kp D   &kp H   &kp T  &kp N  &kp S      &kp MINUS
-      &kp LEFT_SHIFT     &kp SEMICOLON      &kp Q    &kp J   &kp K   &kp X   &kp B   &kp M   &kp W  &kp V  &kp Z  &kp BACKSPACE
-                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SINGLE_QUOTE  &kp COMMA  &kp DOT   &kp P   &kp Y   &kp F   &kp G   &kp C  &kp R  &kp L     &tog 5
+&trans             &kp A      &kp O    &kp E   &kp U   &kp I   &kp D   &kp H   &kp T  &kp N  &kp S  &kp MINUS
+&trans     &kp SEMICOLON      &kp Q    &kp J   &kp K   &kp X   &kp B   &kp M   &kp W  &kp V  &kp Z     &trans
+                                      &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
