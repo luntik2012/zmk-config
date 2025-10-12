@@ -69,7 +69,7 @@
         SYMBOLS {
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp AT             &kp HASH   &kp DOLLAR      &kp PERCENT           &kp CARET              &kp AMPERSAND    &kp ASTERISK  &kp SQT               &kp EQUAL  &kp RIGHT_BRACKET
-&kp LS(Q)  &kp LS(Z)        &kp LS(W)          &kp MINUS  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp EQUAL     &kp LS(E)             &kp Z      &trans
+&kp LS(Q)  &kp LS(Z)        &kp LS(W)          &kp MINUS  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp EQUAL     &kp LS(E)             &kp Z      &kp RIGHT_BRACKET
 &kp GRAVE  &kp LEFT_BRACE   &kp LA(LESS_THAN)  &trans     &trans          &trans                &kp DOUBLE_QUOTES      &kp BACKSLASH    &trans        &kp LA(GREATER_THAN)  &trans     &kp PIPE
                                                &trans     &trans          &trans                &trans                 &trans           &trans
             >;
