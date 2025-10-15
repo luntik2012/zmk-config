@@ -35,10 +35,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E      &kp R         &kp T                   &kp Y             &kp U            &kp I                &kp O    &kp P     &kp BACKSPACE
-&mt LCTRL ESC  &kp A  &kp S  &kp D      &kp F         &kp G                   &kp H             &kp J            &kp K                &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C      &kp V         &kp B                   &kp N             &kp M            &kp COMMA            &kp DOT  &kp FSLH  &mt RIGHT_ALT LEFT_BRACKET
-                             &lt 1 TAB  &lt 2 ESCAPE  &mt LEFT_CONTROL SPACE  &mt LSHIFT ENTER  &lt 3 BACKSPACE  &mt LEFT_ALT DELETE
+&kp TAB                  &kp Q  &kp W  &kp E      &kp R         &kp T                   &kp Y             &kp U            &kp I                &kp O    &kp P     &kp BACKSPACE
+&mt LCTRL ESC            &kp A  &kp S  &kp D      &kp F         &kp G                   &kp H             &kp J            &kp K                &kp L    &kp SEMI  &kp SQT
+&mt LEFT_GUI LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B                   &kp N             &kp M            &kp COMMA            &kp DOT  &kp FSLH  &mt RIGHT_ALT LEFT_BRACKET
+                                       &lt 1 TAB  &lt 2 ESCAPE  &mt LEFT_CONTROL SPACE  &mt LSHIFT ENTER  &lt 3 BACKSPACE  &mt LEFT_ALT DELETE
             >;
         };
 
@@ -68,10 +68,10 @@
 
         SYMBOLS {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp AT             &kp HASH   &kp DOLLAR      &kp PERCENT           &kp CARET              &kp AMPERSAND  &kp ASTERISK  &kp SQT               &kp EQUAL  &kp RIGHT_BRACKET
-&kp LS(Q)  &kp LS(Z)        &kp LS(W)          &kp MINUS  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &kp EQUAL     &kp LS(E)             &kp Z      &kp RIGHT_BRACKET
-&kp GRAVE  &kp LEFT_BRACE   &kp LA(LESS_THAN)  &trans     &trans          &trans                &kp DOUBLE_QUOTES      &kp BACKSLASH  &trans        &kp LA(GREATER_THAN)  &trans     &kp PIPE
-                                               &trans     &trans          &trans                &trans                 &trans         &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT         &kp HASH   &kp DOLLAR      &kp PERCENT           &kp CARET              &kp AMPERSAND  &kp ASTERISK  &kp SQT        &kp RIGHT_BRACKET  &kp RIGHT_BRACE
+&kp LS(Q)  &kp LS(Z)        &kp LS(W)      &kp MINUS  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &kp EQUAL     &kp LS(E)      &kp Z              &kp Q
+&kp GRAVE  &kp LEFT_BRACE   &kp LA(LS(W))  &trans     &trans          &trans                &kp DOUBLE_QUOTES      &kp BACKSLASH  &trans        &kp LA(LS(E))  &trans             &kp PIPE
+                                           &trans     &trans          &trans                &trans                 &trans         &trans
             >;
         };
     };
