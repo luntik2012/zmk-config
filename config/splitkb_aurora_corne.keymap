@@ -53,7 +53,7 @@
             bindings = <
 &kp TAB       &kp CAPS  &kp LS(CAPS)  &kp LANG3       &kp LANG4       &kp PRINTSCREEN  &bt BT_SEL 0        &bt BT_SEL 1   &bt BT_SEL 2  &kp K_PREV            &kp K_PLAY_PAUSE              &kp K_NEXT
 &kp RCTRL     &mkp MB4  &mkp RCLK     &mkp MCLK       &mkp LCLK       &mkp MB5         &trans              &trans         &trans        &kp K_VOL_DN          &kp K_MUTE                    &kp K_VOL_UP
-&out OUT_TOG  &trans    &trans        &kp LC(INSERT)  &kp LS(INSERT)  &kp LS(DELETE)   &kp K_CONTEXT_MENU  &kp C_AL_MAIL  &trans        &kp C_BRIGHTNESS_DEC  &kp C_AL_AV_CAPTURE_PLAYBACK  &kp C_BRIGHTNESS_INC
+&out OUT_TOG  &kp TAB   &trans        &kp LC(INSERT)  &kp LS(INSERT)  &kp LS(DELETE)   &kp K_CONTEXT_MENU  &kp C_AL_MAIL  &trans        &kp C_BRIGHTNESS_DEC  &kp C_AL_AV_CAPTURE_PLAYBACK  &kp C_BRIGHTNESS_INC
                                       &kp LGUI        &trans          &bt BT_CLR       &trans              &trans         &kp LEFT_GUI
             >;
         };
@@ -73,6 +73,15 @@
 &kp LS(Q)  &kp LS(Z)        &kp LS(W)      &kp MINUS  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS       &kp EQUAL     &kp LS(E)      &kp Z              &kp Q
 &kp GRAVE  &kp LEFT_BRACE   &kp LA(LS(W))  &trans     &trans          &trans                &kp DOUBLE_QUOTES      &kp BACKSLASH  &trans        &kp LA(LS(E))  &trans             &kp PIPE
                                            &trans     &trans          &trans                &trans                 &trans         &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
